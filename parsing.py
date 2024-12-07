@@ -88,5 +88,5 @@ def scrape_images(barcodes_file):
 
 # Running
 if __name__ == "__main__":
-    barcodes_file = 'barcodes.txt'  # Name of file with barcodes
+    barcodes_file = 'barcodes.txt'  # Name of the file with barcodes
     scrape_images(barcodes_file)
