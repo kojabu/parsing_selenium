@@ -70,7 +70,7 @@ def scrape_images(barcodes_file):
 
             # Downloading iamges
             for idx, img in enumerate(images):
-                img_url = img.get_attribute("srcset").split(', ')[-1].split(' ')[0]  # Берём самое крупное изображение
+                img_url = img.get_attribute("srcset").split(', ')[-1].split(' ')[0]  # Taking largest image
                 if img_url:
                     save_image(img_url, folder_path, f"{barcode}-{idx + 1}.jpg")
 
